@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+.App{
+    width: 100vw;
+    height:100%;
+    background-color:#FAFBFC;
+    display: flex;
+    flex-direction:row;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.Sidebar{
+    height: 100%;
+    width: 250px;
+    background-color: white;
+}
+#profilepic{
+    margin-top: 20px;
+    margin-left:80px;
+    position: absolute;
+}
+.profile_items{
+    position:absolute;
+    margin-top: 20px;
+}
+.profilename{
+    font-family: 'Lato';
+    margin-left: 50px;
+    position: absolute;
+    margin-top: 125px;
+    text-align: center;
+    font-size: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.myprofile{
+    font-family: 'Lato';
+    margin-left: auto;
+    margin-left: 80px;
+    position: absolute;
+    margin-top: 170px;
+    color:#226CFC ;
+    font-size: 18px;
+}
+.Menu_items{
+    display: flex;
+    flex-direction:row;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    font-size:14px;
+    width: 150px;
+    height:30px;
+    background-color:white;
+    margin-top: 30px;
+}
+.Menu_items #icons{
+    margin-right: 19px;
+    
+
+}
+.Menu_items:hover{
+    transform: translateY(2px);
+}
+.Menu_header{
+    font-stretch: ultra-expanded;
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato';
+    font-weight: 700;
+    width: 150px;
+    height:30px;
+    background-color:white;
+    margin-top: 9px;
+}
+.UP_btn{
+    transition-duration: 0.5s ease;
+    margin-top: 150px;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom:auto;
+    color: white;
+    text-align: center;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size:18;
+    margin-left: auto;
+    margin-right: auto;
+    width:170px;
+    height:35px;
+    background-color: #226CFC;
+    
+}
+.UP_btn:hover{
+    transform: translateY(2px);
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+.CS_btn{
+    margin-top: 20px;
+    border-radius: 8px;
+    padding-top: 9px;
+    padding-bottom:auto;
+    color: #226CFC;
+    text-align: center;
+    font-size:18;
+    font-family: 'Lato';
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    width:170px;
+    height:35px;
+    background-color: #E8F0FF;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CS_btn:hover{
+    transform: translateY(2px);
 }

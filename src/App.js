@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar'
+import './components/Sidebar.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import chart from "./components/icons/chart.PNG"
+
+
+function App(){
+    return(
+        <div className="App">
+            <Sidebar/>
+            <div className="Dashboard">
+                <div className="Over">
+                    Overview
+                </div>
+                    <hr  style={{
+                        color: '#D4D6DD',
+                        backgroundColor: '#D4D6DD',
+                        height: .3,
+                        border:0,
+                    }}/>
+                <div className="chart">
+                <img className="chartimg" src={chart} alt="fireSpot" />
+                </div>
+                    
+            </div>
+                
+                
+        </div>
+            
+     );
+
 }
 
 export default App;
